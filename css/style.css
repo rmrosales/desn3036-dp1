@@ -1,0 +1,41 @@
+:root {
+    /* Color Scheme */
+    --primary-color: #ffffff;
+    --accent-color-1: #d47f42;
+    --accent-color-2: #afafaf;
+    --accent-color-3: #aba1a1;
+    --navigation-color: #171717;
+    --text-color: #d7cccc;
+    --text-color--content: #afafaf;
+    --text-color-lighter: #9999b2;
+    --text-color-light: #f4f4f4;
+    --text-color-dark: #30313d;
+    --card-color: #242424;
+    --background-color: #1d1d1d;
+    --header-background: #2b2b2b;
+    --footer-background: #e4e4e4;
+    --footer-text-color: #7a7d89;
+    --footer-text-hover: #8f93a2;
+    /* Typography */
+    --font-family: Helvetica, Arial, sans-serif;
+    --font-size-base: 18px;
+    --font-size-heading: 24px;
+    --font-weight-regular: 500;
+    --font-weight-bold: 900;
+    /* Spacing & layout */
+    --spacing-unit: 18px;
+    /* Transitions */
+    --transition-duration: 0.3s;
+    --scale: 1;
+    --scale-hover: 1.02;
+}
+
+body {
+    /* Global settings */
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
