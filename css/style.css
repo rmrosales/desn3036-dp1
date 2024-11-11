@@ -65,14 +65,14 @@ body {
     display: inline;
 }
 
-.nav-links {
+.nav-link {
     color: var(--text-color);
     font-size: .95em;
     margin-left: 40px;
     text-decoration: none;
 }
 
-.hero-cta {
+.hero-nav-link {
     color: var(--primary-color);
     margin-left: 40px;
     text-decoration: none;
