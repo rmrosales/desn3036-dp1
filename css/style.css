@@ -4,6 +4,9 @@
     --accent-color-1: #34af44;
     --accent-color-2: #8C8888;
     --accent-color-3: #aba1a1;
+    --accent-color-4: #5a5a5a;
+    --accent-color-5: #0D0D0D;
+    --accent-gradient-1: linear-gradient(138deg, #69aa6d 36.39%, #32a838 93.26%);
     --navigation-color: #171717;
     --text-color-primary: #0A0A0A;
     --text-color-content: #0D0D0D;
@@ -23,7 +26,7 @@
     /* Spacing & layout */
     --spacing-unit: 18px;
     /* Transitions */
-    --transition-duration: 0.3s;
+    --transition-duration: .3s;
     --scale: 1;
     --scale-hover: 1.02;
 }
@@ -77,11 +80,21 @@ body {
     text-decoration: none;
 }
 
+.nav-link:hover {
+    color: var(--accent-color-4);
+    transition: var(--transition-duration);
+}
+
 .hero-nav-link {
     color: var(--primary-color);
     margin-left: 40px;
     text-decoration: none;
     padding: 14px 24px;
     border-radius: 13px;
-    background: var(--primary-text-color, #0A0A0A);
+    background: var(--accent-color-5);
+}
+
+.hero-nav-link:hover {
+    background: var(--accent-gradient-1);
+    transition: var(--transition-duration);
 }
