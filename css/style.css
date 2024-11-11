@@ -2,16 +2,14 @@
     /* Color Scheme */
     --primary-color: #ffffff;
     --accent-color-1: #34af44;
-    --accent-color-2: #afafaf;
+    --accent-color-2: #8C8888;
     --accent-color-3: #aba1a1;
     --navigation-color: #171717;
-    --text-color: #d7cccc;
-    --text-color--content: #afafaf;
-    --text-color-lighter: #9999b2;
-    --text-color-light: #f4f4f4;
-    --text-color-dark: #30313d;
+    --text-color-primary: #0A0A0A;
+    --text-color-content: #0D0D0D;
+    --text-color-grey: #8C8888;
     --card-color: #242424;
-    --background-color: #1d1d1d;
+    --background-color: #FFF;
     --header-background: #2b2b2b;
     --footer-background: #e4e4e4;
     --footer-text-color: #7a7d89;
@@ -38,4 +36,16 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+}
+
+/* Navigation */
+
+.nav-wrapper {
+    background-color: var(--card-color);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 24px 65px 0px 65px;
+    justify-content: space-between;
+    align-items: center;
 }
