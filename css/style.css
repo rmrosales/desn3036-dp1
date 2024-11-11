@@ -65,6 +65,11 @@ body {
     display: inline;
 }
 
+.nav-container img{
+    height: 30px;
+    width: auto;
+}
+
 .nav-link {
     color: var(--text-color);
     font-size: .95em;
