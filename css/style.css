@@ -22,6 +22,7 @@
     --font-size-base: 18px;
     --font-size-heading: 24px;
     --font-weight-light: 300;
+    --font-weight-med-light: 400;
     --font-weight-regular: 500;
     --font-weight-bold: 900;
     /* Spacing & layout */
@@ -144,7 +145,7 @@ p {
 
 .highlight {
     border-radius: 8px;
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-med-light);
     font-size: 15px;
     letter-spacing: -.5px;
     background: #F3F2F3;
