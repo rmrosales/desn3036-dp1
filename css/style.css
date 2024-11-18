@@ -45,6 +45,10 @@ body {
     padding: 0;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
 p {
     font-size: 1.05em;
     font-weight: var(--font-weight-light);
@@ -215,7 +219,7 @@ p {
 
 /* --Media Queries-- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 936px) {
 
     .nav-container ul li {
         display: block;
@@ -225,9 +229,10 @@ p {
         top: 5vh;
         background-color: #FFF;
         position: absolute;
-        padding-bottom: 50px;
+        padding-left: 8vw;
         left: -200%;
-        width: 90vw;
+        width: 92vw;
+        height: 90vh;
         text-align: left;
     }
 
@@ -260,6 +265,28 @@ p {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-nav-link, .nav-link {
+        color: var(--text-color);
+        font-size: .95em;
+        text-decoration: none;
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        font-weight: 600;
+
+    }
+
+    .hero-nav-link:hover {
+        color: var(--accent-color-4);
+        background: none;
+        transition: var(--transition-duration);
+    }
+
+    .nav-container img {
+        height: 28px;
+        width: auto;
     }
 
     /* --Typography Fixes-- */
