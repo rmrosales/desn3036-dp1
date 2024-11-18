@@ -6,6 +6,8 @@
     --accent-color-3: #aba1a1;
     --accent-color-4: #5a5a5a;
     --accent-color-5: #0D0D0D;
+    --accent-color-6: #c4c4c4;
+    --accent-color-7: #e6e6e6;
     --accent-gradient-1: linear-gradient(138deg, #69aa6d 36.39%, #32a838 93.26%);
     --navigation-color: #171717;
     --text-color-primary: #0A0A0A;
@@ -117,11 +119,16 @@ p {
     text-decoration: none;
     padding: 14px 24px;
     border-radius: 13px;
-    border: 1px solid var(--accent-color-2);
+    border: 1px solid var(--accent-color-6);
 }
 
 .hero-nav-link:hover, .hero-cta:hover {
     background: var(--accent-gradient-1);
+    transition: var(--transition-duration);
+}
+
+.cta:hover {
+    background: var(--accent-color-7);
     transition: var(--transition-duration);
 }
 
