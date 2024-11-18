@@ -261,4 +261,23 @@ p {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    /* --Typography Fixes-- */
+
+    .banner-block h1 {
+        font-size: 2.9em;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    a {
+        font-size: smaller;
+    }
+
+    .highlight {
+        font-size: 13px;
+    }
+
 }
