@@ -116,6 +116,7 @@ p {
     padding: 14px 24px;
     border-radius: 13px;
     background: var(--accent-color-5);
+    margin: auto;
 }
 
 .cta {
@@ -124,6 +125,7 @@ p {
     padding: 14px 24px;
     border-radius: 13px;
     border: 1px solid var(--accent-color-6);
+    margin: auto;
 }
 
 .hero-nav-link:hover, .hero-cta:hover {
@@ -210,8 +212,8 @@ p {
 
 .cta-set-wrapper {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
+    align-items: flex-start;
     gap: 22px;
     margin-top: 18px;
 }
@@ -310,6 +312,10 @@ p {
         width: 90vw;
         margin: auto;
         gap: 14px;
+    }
+
+    #case-studies-cta {
+        display: none;
     }
 
 }
