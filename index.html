@@ -45,7 +45,8 @@
             <div class="banner-container">
                 <div class="banner-block">
                     <p class="highlight">Romeo Martin Rosales ⚡ Product Designer + Developer</p>
-                    <h1>Designing Products <br> That Matter. <span class="green-gradient">Worldwide.</span></h1>
+                    <h1>Designing Products <br> That Matter. <span class="green-gradient" id="green-gradient"></span>
+                    </h1>
                     <p>I’m a UI/UX designer and developer based in Toronto focused on creating user-centered <br> and
                         interactive digital experiences for partners around the globe.</p>
                     <div class="cta-set-wrapper">
@@ -62,6 +63,7 @@
     </footer>
 
     <script>
+        //navigation mobile fix
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
 
@@ -71,6 +73,22 @@
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
         }
+
+        //text typewriter effect
+        var i = 0;
+        var txt = 'Worldwide.';
+        var speed = 200;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("green-gradient").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        // Trigger typewriter effect on page load
+        window.onload = typeWriter;
     </script>
 
 </body>
