@@ -284,14 +284,14 @@ p {
     }
 
     .nav-container img {
-        height: 28px;
+        height: 26px;
         width: auto;
     }
 
     /* --Typography Fixes-- */
 
     .banner-block h1 {
-        font-size: 2.9em;
+        font-size: 2em;
     }
 
     p {
@@ -303,7 +303,7 @@ p {
     }
 
     .highlight {
-        font-size: 13px;
+        font-size: 11px;
     }
 
 }
