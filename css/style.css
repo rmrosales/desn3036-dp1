@@ -171,7 +171,7 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 50vh;
-    width: 85vw;
+    width: 90vw;
     margin: auto;
 }
 
@@ -304,6 +304,12 @@ p {
 
     .highlight {
         font-size: 11px;
+    }
+
+    .cta-set-wrapper {
+        width: 90vw;
+        margin: auto;
+        gap: 14px;
     }
 
 }
