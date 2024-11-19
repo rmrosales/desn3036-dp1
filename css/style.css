@@ -309,13 +309,18 @@ p {
     }
 
     .cta-set-wrapper {
-        width: 90vw;
         margin: auto;
         gap: 14px;
     }
 
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
     #case-studies-cta {
         display: none;
     }
-
 }
