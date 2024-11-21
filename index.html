@@ -17,7 +17,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <nav class="nav-wrapper">
             <div class="nav-container">
                 <img src="./images/top-logo.svg" alt="Rom Studio">
@@ -32,7 +32,7 @@
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
-                        <span class="bar"></span>
+                        <!-- <span class="bar"></span> -->
                     </div>
 
                 </div>
@@ -40,7 +40,7 @@
         </nav>
     </header>
 
-    <main>
+    <main style="z-index: 800;">
         <section class="banner-wrapper">
             <div class="banner-container">
                 <div class="banner-block">
@@ -77,16 +77,34 @@
 
     <script>
         //navigation mobile fix
+
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
+        const menuItems = document.querySelectorAll(".nav-link");
+        //querySelectorAll to target all links with class .nav-link
 
         hamburger.addEventListener("click", mobileMenu);
 
         function mobileMenu() {
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
-            //document.getElementById("mainNav").style.height = "100vh";
+            // document.getElementById("header").style.height = "100vh";
         }
+
+        menuItems.forEach(item => {
+            item.addEventListener("click", closeMobileMenu);
+        });
+        //close mobileMenu to show scroll section
+
+        function closeMobileMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+
+
+
+
 
 
 
