@@ -312,7 +312,10 @@ header {
         padding: 0;
         border-radius: 0;
         background: none;
+    }
 
+    .hero-nav-link {
+        color: var(--accent-color-1);
     }
 
     .hero-nav-link:hover {
