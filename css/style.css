@@ -162,9 +162,9 @@ header {
 
 .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 13px auto;
+    width: 27px;
+    height: 2px;
+    margin: 14px auto;
     /* before 5px */
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -219,7 +219,7 @@ header {
 .banner-block h1 {
     font-size: 3.7em;
     font-style: normal;
-    font-weight: 550;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: -.2px;
     margin: 0;
@@ -306,7 +306,7 @@ header {
     .nav-link {
         color: var(--text-color);
         font-size: 2em;
-        font-weight: 550;
+        font-weight: 400;
         letter-spacing: -.2px;
         text-decoration: none;
         padding: 0;
