@@ -348,6 +348,10 @@ header {
         gap: 14px;
     }
 
+    .banner-container {
+        /* background-color: #adadad; */
+        padding: 70px 0;
+
 
 
 }
