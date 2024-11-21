@@ -21,7 +21,7 @@
         <nav class="nav-wrapper">
             <div class="nav-container">
                 <img src="./images/top-logo.svg" alt="Rom Studio">
-                <div class="main-nav">
+                <div class="main-nav" id="mainNav">
                     <ul class="nav-menu">
                         <li><a class="nav-link" href="./index.html">Home</a></li>
                         <li><a class="nav-link" href="#">Case Studies</a></li>
@@ -34,12 +34,12 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-
+    
                 </div>
-            </div>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="banner-wrapper">
             <div class="banner-container">
@@ -55,7 +55,20 @@
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section class="banner-wrapper">
+            <div class="banner-container">
+                <div class="banner-block">
+                    <p class="highlight">Romeo Martin Rosales ⚡ Product Designer + Developer</p>
+                    <h1>This is another section.
+                    </h1>
+                    <p>I’m a UI/UX designer and developer based in Toronto focused on creating user-centered <br> and
+                        interactive digital experiences for partners around the globe.</p>
+                    <div class="cta-set-wrapper">
+                        <a class="hero-cta" href="#">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -72,7 +85,10 @@
         function mobileMenu() {
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
+            //document.getElementById("mainNav").style.height = "100vh";
         }
+
+
 
         //text typewriter effect
         var i = 0;
