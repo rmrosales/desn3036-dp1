@@ -36,6 +36,12 @@
     --scale-hover: 1.02;
 }
 
+@font-face {
+    font-family: "Gesit-Regular";
+    src:
+        url("/fonts/Geist-Regular.ttf") format("truetype")
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -217,7 +223,7 @@ header {
 }
 
 .banner-block h1 {
-    font-size: 3.7em;
+    font-size: 3.5em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
