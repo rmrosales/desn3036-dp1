@@ -36,6 +36,10 @@
     --scale-hover: 1.02;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* Global settings */
     background-color: var(--background-color);
@@ -62,9 +66,9 @@ p {
 
 /* make header sticky */
 header {
-    position: sticky; 
+    position: sticky;
     top: 0;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(22px);
     z-index: 999;
     /* overflow: hidden; */
@@ -181,7 +185,7 @@ header {
 
 .banner-container {
     /* background-color: #adadad; */
-    padding: 50px 0;
+    padding: 120px 0;
     /* display: flex;
     flex-wrap: wrap; */
     justify-content: space-between;
@@ -255,7 +259,7 @@ header {
     .nav-menu {
         top: 5.2vh;
         /* background-color: #FFF; */
-        background-color: rgba(255,255,255,0.98);
+        background-color: rgba(255, 255, 255, 0.98);
         /* backdrop-filter: blur(22px); */
         z-index: 998;
         position: absolute;
