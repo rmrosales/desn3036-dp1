@@ -20,14 +20,14 @@
     <header id="header">
         <nav class="nav-wrapper">
             <div class="nav-container">
-                <img src="./images/top-logo-v2.svg" alt="Rom Studio">
+                <img src="./images/top-logo.svg" alt="Rom Studio">
                 <div class="main-nav" id="mainNav">
                     <ul class="nav-menu">
                         <li><a class="nav-link" href="./index.html">Home</a></li>
                         <li><a class="nav-link" href="#section2">Case Studies</a></li>
-                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#section3">About</a></li>
                         <li><a class="nav-link" href="#">Resume</a></li>
-                        <li><a class="hero-nav-link" href="#">Hire Me</a></li>
+                        <li><a class="hero-nav-link" href="#section4">Hire Me</a></li>
                     </ul>
                     <div class="hamburger">
                         <span class="bar"></span>
@@ -56,6 +56,7 @@
                 </div>
             </div>
         </section>
+
         <section class="banner-wrapper" id="section2">
             <div class="banner-container">
                 <div class="banner-block">
@@ -66,6 +67,60 @@
                         interactive digital experiences for partners around the globe.</p>
                     <div class="cta-set-wrapper">
                         <a class="hero-cta" href="#">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-wrapper" id="section3">
+            <div class="about-block">
+                <div class="block-intro">
+                    <p class="section-title">About</p>
+                    <h2>Bridging the gap between design <br> & development to bring ideas to life. </h2>
+                    <p>With a focus on user-centered solutions, I combine creativity and technical <br> expertise to craft
+                        seamless experiences that resonate with users and meet business goals.</p>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="skill-item">
+                        <img src="./images/digital-strategy-ico.svg" alt="">
+                        <p>Digital Strategy</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./images/ux-design-ico.svg" alt="">
+                        <p>UX Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./images/ui-design-ico.svg" alt="">
+                        <p>UI Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./images/branding-ico.svg" alt="">
+                        <p>Branding</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./images/web-development-ico.svg" alt="">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <p>Let’s work together transform your vision into a functional, engaging product. Together, we will navigate the design process, ensuring that every element serves a purpose while enhancing the overall user experience. </p>
+                <div class="about-cta-set-wrapper">
+                    <a class="hero-cta" id="about-work-together-cta" href="#">Let's Work Together</a>
+                    <a class="cta" href="#">My Resume</a>
+                </div>
+            </div>
+            <img src="./images/profile-photo.png" alt="Profile Photo">
+        </section>
+
+        <section class="banner-wrapper" id="section4">
+            <div class="banner-container">
+                <div class="banner-block">
+                    <p class="highlight">Romeo Martin Rosales ⚡ Product Designer + Developer</p>
+                    <h1>Let's work together.
+                    </h1>
+                    <p>Collaborate with me to transform your ideas into impactful designs that make a difference.</p>
+                    <div class="cta-set-wrapper">
+                        <a class="hero-cta" href="#">Let's Work Together</a>
+                        <a class="cta" id="linkedin-cta" href="#section2">Connect with me on Linked In</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +166,7 @@
 
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
-            
+
             document.body.style.position = "static";
             document.body.style.overflow = "visible";
             document.body.style.left = "0";
