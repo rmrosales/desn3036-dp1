@@ -66,8 +66,8 @@ html {
 
 body {
     /* Global settings */
-    background-image: url(/images/grid.svg);
-    cursor: url(/images/cursor.svg), auto;
+    background-image: url(../images/grid.svg);
+    cursor: url(../images/cursor.svg), auto;
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     color: var(--text-color);
