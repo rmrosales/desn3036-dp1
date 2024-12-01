@@ -64,6 +64,7 @@
 
 html {
     scroll-behavior: smooth;
+    transition: 1s;
 }
 
 body {
@@ -579,13 +580,14 @@ strong {
     justify-content: space-between;
     align-items: flex-start;
     width: 25vw;
+    gap: 14px;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 200px;
+    width: 170px;
 }
 
 .footer-items-right {
@@ -845,6 +847,7 @@ strong {
         width: 80vw;
         gap: 24px;
     }
+
 
 }
 
