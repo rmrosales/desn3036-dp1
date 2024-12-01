@@ -260,7 +260,7 @@ header {
     width: 42vw;
     flex-direction: column;
     align-items: flex-start;
-    gap: 44px;
+    gap: 34px;
 }
 
 
@@ -284,11 +284,13 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.1px;
+    width: 30vw;
 }
 
-.block-intro p {
+.about-block p {
     margin: 0;
+    width: 35vw;
 }
 
 /* --Skills Wrapper-- */
@@ -422,6 +424,7 @@ header {
 
     p, a {
         font-size: smaller;
+        font-weight: 400;
     }
 
     .highlight {
@@ -443,6 +446,7 @@ header {
         /* background-color: #d3d3d3; */
         flex-direction: column;
         padding: 80px 0 40px 0;
+        gap: 54px;
     }
 
     .block-intro, .about-wrapper p, .about-wrapper h2 {
@@ -466,6 +470,15 @@ header {
         gap: 44px;
     }
 
+    .about-block h2 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    
+    .about-block p {
+        margin: 0;
+        width: 100%;
+    }
 
     .skill-item img {
         height: 52px;
@@ -485,11 +498,15 @@ header {
         text-align: center;
     }
 
+    .about-cta-set-wrapper {
+        margin: auto;
+    }
+
 }
 
 @media only screen and (max-width: 468px) {
 
-    #case-studies-cta, #about-work-together-cta {
+    #case-studies-cta, #about-work-together-cta, #linkedin-cta {
         display: none;
     }
 }
