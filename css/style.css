@@ -31,7 +31,7 @@
     /* Spacing & layout */
     --spacing-unit: 18px;
     /* Transitions */
-    --transition-duration: .3s;
+    --transition-duration: .5s;
     --scale: 1;
     --scale-hover: 1.02;
 }
@@ -42,13 +42,31 @@
         url("/fonts/Geist-Regular.ttf") format("truetype")
 }
 
+/* ---Fade in animate--- */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0; /* Ensure it starts hidden */
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     /* Global settings */
-    background-color: var(--background-color);
+    background-image: url(/images/grid.svg);
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     color: var(--text-color);
@@ -62,9 +80,9 @@ ul {
 
 p {
     font-size: .95em;
-    color: #3a3a3a;
-    font-weight: var(--font-weight-med-light);
-    line-height: 1.5em;
+    color: #5a5a5a;
+    font-weight: var(--font-weight-light);
+    line-height: 1.45em;
     /* 129.412% */
     letter-spacing: -.2px;
 }
@@ -75,8 +93,8 @@ p {
 header {
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(22px);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
     z-index: 999;
     /* overflow: hidden; */
 }
@@ -184,7 +202,7 @@ header {
 /* --Banner-- */
 
 .banner-wrapper {
-    background-color: var(--background-color);
+    /* background-color: #adadad; */
     z-index: -2;
 }
 
@@ -198,6 +216,30 @@ header {
     height: 40vh;
     width: 90vw;
     margin: auto;
+}
+
+.hero-mini-photo {
+    animation: MoveUpDown 1.5s linear infinite;
+    height: 72px;
+    width: 72px;
+    margin-bottom: 8px;
+    border-radius: 100px;
+    border: 5px solid rgba(95, 172, 118, 0.2);
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+  }
+
+.hero-mini-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
 }
 
 .banner-block {
@@ -241,6 +283,7 @@ header {
     margin-top: 18px;
 }
 
+
 /* --Projects Sect-- */
 
 .projects-wrapper {
@@ -282,13 +325,23 @@ header {
     width: 310px;
     flex-wrap: wrap;
     margin-top: 24px;
+    transition: var(--transition-duration);
 }
 
+
 .project-card img {
+    background-color: var(--background-color);
     width: 100%;
+    margin-bottom: 12px;
     height: auto;
     border-radius: 22px;
+    transition: var(--transition-duration);
 }
+
+.project-card img:hover {
+    opacity: .7;
+}
+
 
 .project-type {
     border-radius: 8px;
@@ -298,13 +351,20 @@ header {
     letter-spacing: -.2px;
     /* background: #F3F2F3;
     padding: 7px 16px 8px 16px; */
-    margin: 12px 0px 0px 0px;
+    margin: 0;
 }
 
-.project-card h3 {
+.project-card a {
     margin: 0;
-    font-size: 1.4em;
+    color: var(--accent-color-5);
+    text-decoration: none;
+    font-size: 1.3em;
     font-weight: var(--font-weight-regular);
+    transition: var(--transition-duration);
+}
+
+.project-card a:hover {
+    color: var(--accent-color-1);
 }
 
 
@@ -660,8 +720,8 @@ strong {
 
     .banner-container {
         /* background-color: #adadad; */
-        padding: 70px 0;
-        height: 50vh;
+        padding: 40px 0;
+        height: 70vh;
     }
 
     /* --About Section Fixes-- */
@@ -769,8 +829,7 @@ strong {
 @media only screen and (max-width: 468px) {
 
     #case-studies-cta,
-    #about-work-together-cta,
-    #linkedin-cta {
+    #about-work-together-cta {
         display: none;
     }
 }
