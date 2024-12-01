@@ -356,7 +356,7 @@ header {
 .project-type {
     border-radius: 8px;
     color: var(--accent-color-2);
-    font-weight: var(--font-weight-regular);
+    font-weight: 400;
     font-size: .8em;
     letter-spacing: -.2px;
     /* background: #F3F2F3;
@@ -753,7 +753,7 @@ strong {
         gap: 54px;
     }
 
-    .block-intro,
+    .block-intro, .about-wrapper h4,
     .about-wrapper p,
     .about-wrapper h2 {
         text-align: center;
