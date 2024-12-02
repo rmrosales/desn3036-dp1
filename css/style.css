@@ -85,7 +85,7 @@ ul {
 p {
     font-size: .95em;
     color: #5a5a5a;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-med-light);
     line-height: 1.45em;
     /* 129.412% */
     letter-spacing: -.2px;
