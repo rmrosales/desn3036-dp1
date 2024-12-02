@@ -1093,10 +1093,6 @@ strong {
         margin: auto;
     }
     
-    .takeaways-block h4 {
-        margin: auto;
-    }
-    
     .takeaways-container {
         display: flex;
         align-items: flex-start;
@@ -1105,6 +1101,10 @@ strong {
         gap: 54px;
         flex-wrap: wrap;
         padding-top: 40px;
+        margin: auto;
+    }
+
+    .takeaways-block h4 {
         margin: auto;
     }
     
